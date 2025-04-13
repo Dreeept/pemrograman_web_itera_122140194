@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="transition-all bg-[#F8F7F4] text-gray-900">
+    <!-- HEADER -->
+    <header
+      class="flex items-center justify-between px-6 py-4 bg-[#191970] text-white shadow-md"
+    >
+      <h1 class="text-lg font-bold">Dashboard</h1>
+      <p id="tanggal-waktu" class="text-sm text-center"></p>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="p-6 space-y-6 max-w-4xl mx-auto">
+      <!-- WELCOME + CUACA -->
+      <div class="flex justify-between items-center text-black">
+        <h2 class="text-2xl font-semibold">Selamat Datang, Andre!</h2>
+        <p id="cuaca" class="text-sm text-right">🌦️ Memuat info cuaca...</p>
+      </div>
+
+      <!-- JADWAL KULIAH -->
+      <section
+        class="p-6 bg-transparent border-2 border-[#191970] rounded-lg shadow-md"
+      >
+        <h3 class="text-xl font-semibold mb-3">Jadwal Kuliah Hari Ini</h3>
+        <ul id="jadwal-hari-ini" class="list-disc pl-5 mb-4 space-y-2"></ul>
+
+        <div class="flex flex-col md:flex-row gap-3">
+          <input
+            id="mata-kuliah"
+            type="text"
+            placeholder="Mata kuliah"
+            class="bg-transparent border border-[#191970] flex-grow p-2 rounded border"
+          />
+          <input
+            id="waktu-kuliah"
+            type="time"
+            class="bg-transparent p-2 rounded border border border-[#191970]"
+          />
+          <button
+            onclick="tambahJadwal()"
+            class="bg-transparent border-2 border-[#191970] text-[#191970] px-4 py-2 rounded transition-all duration-300 hover:bg-[#191970] hover:text-white hover:border-transparent"
+          >
+            Tambah
+          </button>
+        </div>
+      </section>
+
+      <!-- DAFTAR TUGAS -->
+      <section
+        class="p-6 bg-transparent border-2 border-[#191970] rounded-lg shadow-md"
+      >
+        <h3 class="text-xl font-semibold mb-3">Daftar Tugas</h3>
+        <ul id="tugas-list" class="list-disc pl-5 mb-4 space-y-2"></ul>
+
+        <div class="flex flex-col md:flex-row gap-3">
+          <input
+            id="nama-tugas"
+            type="text"
+            placeholder="Nama tugas"
+            class="flex-grow p-2 rounded border bg-transparent border border-[#191970]"
+          />
+          <input
+            id="deadline-tugas"
+            type="date"
+            class="bg-transparent p-2 rounded border border-[#191970]"
+          />
+          <button
+            onclick="tambahTugas()"
+            class="bg-transparent border-2 border-[#191970] text-[#191970] px-4 py-2 rounded transition-all duration-300 hover:bg-[#191970] hover:text-white hover:border-transparent"
+          >
+            Tambah Tugas
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
