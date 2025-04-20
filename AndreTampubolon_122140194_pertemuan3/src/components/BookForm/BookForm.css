@@ -1,0 +1,60 @@
+.bookform-container {
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #fbcfe8; /* pink-200 */
+  border: 3px solid black;
+  border-radius: 0.375rem;
+  box-shadow: 6px 6px 0px black;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bookform-title {
+  font-size: 1.875rem;
+  font-weight: 800;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
+.bookform-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bookform-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+}
+
+.bookform-input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px 0px black;
+  outline: none;
+  font-size: 1rem;
+}
+
+.bookform-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3b82f6; /* blue-500 */
+  color: black;
+  font-weight: 800;
+  border: 3px solid black;
+  border-radius: 0.25rem;
+  box-shadow: 4px 4px 0px black;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.bookform-button:hover {
+  background-color: #60a5fa; /* blue-400 */
+}

@@ -1,0 +1,87 @@
+.booklist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booklist-empty {
+  text-align: center;
+  color: #4b5563; /* gray-600 */
+  font-style: italic;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 4px 4px 0px black;
+}
+
+.book-card {
+  padding: 1.25rem;
+  background-color: #fbcfe8; /* pink-200 */
+  border: 3px solid black;
+  border-radius: 0.375rem;
+  box-shadow: 6px 6px 0px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .book-card {
+    flex-direction: row;
+  }
+}
+
+.book-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.book-author {
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+}
+
+.book-status {
+  font-style: italic;
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+}
+
+.book-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 0px black;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-edit {
+  background-color: #fde68a; /* yellow-300 */
+}
+
+.btn-edit:hover {
+  background-color: #fcd34d; /* yellow-400 */
+}
+
+.btn-delete {
+  background-color: #fca5a5; /* red-300 */
+}
+
+.btn-delete:hover {
+  background-color: #f87171; /* red-400 */
+}

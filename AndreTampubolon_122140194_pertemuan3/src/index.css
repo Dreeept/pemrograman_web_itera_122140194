@@ -1,0 +1,191 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  min-height: 100vh; /* full height of viewport */
+  flex-direction: column;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0; /* Warna background yang terang */
+  color: #000; /* Teks hitam */
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700; /* Tegas dan bold untuk heading */
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Teks capital untuk kesan kuat */
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Neobrutalism Styles */
+
+/* Border kasar */
+button,
+input,
+select,
+.border-black,
+.border-white {
+  border: 3px solid black;
+  border-radius: 8px;
+  box-shadow: 6px 6px 0px black; /* Drop shadow tegas */
+  background-color: white;
+}
+
+/* Background kasar */
+.bg-yellow-200 {
+  background-color: #f7e600;
+}
+
+.bg-pink-200 {
+  background-color: #f7a7c0;
+}
+
+.bg-yellow-100 {
+  background-color: #f9f500;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+/* Teks */
+.text-black {
+  color: #000;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #f7e600;
+  color: black;
+  transform: translateY(-2px); /* Efek hover */
+}
+
+button:active {
+  transform: translateY(2px); /* Efek klik */
+}
+
+/* Card Design */
+.card {
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 10px 10px 0px black;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Drop shadows */
+.drop-shadow-heavy {
+  box-shadow: 12px 12px 0px black;
+}
+
+/* Text Styles */
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-mono {
+  font-family: "Courier New", monospace;
+}
+
+/* Form Elements */
+input,
+select,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: white;
+  border: 3px solid #000;
+  margin-bottom: 20px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f7a7c0;
+  box-shadow: 0px 0px 8px #f7a7c0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+/* Flexbox untuk layout */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

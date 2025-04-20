@@ -1,0 +1,40 @@
+.bookfilter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fde68a; /* yellow-200 */
+  border: 3px solid black;
+  border-radius: 0.375rem;
+  box-shadow: 6px 6px 0px black;
+}
+
+@media (min-width: 768px) {
+  .bookfilter-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.bookfilter-input,
+.bookfilter-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 0.25rem;
+  box-shadow: 4px 4px 0px black;
+  color: black;
+  font-weight: 600;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .bookfilter-input {
+    width: 66.666667%;
+  }
+  .bookfilter-select {
+    width: 33.333333%;
+  }
+}

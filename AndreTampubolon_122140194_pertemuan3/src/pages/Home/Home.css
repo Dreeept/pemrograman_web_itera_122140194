@@ -1,0 +1,41 @@
+.home-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #fde047; /* Tailwind bg-yellow-200 */
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 6px 6px 0px black;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 800;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.btn-stats {
+  display: inline-block;
+  margin-top: 20px; /* Spasi antara tombol filter dan tombol statistik */
+  text-align: center;
+  border: 3px solid black;
+  box-shadow: 6px 6px 0px black;
+  padding: 10px 20px;
+  background-color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.btn-stats:hover {
+  background-color: #f7e600;
+  transform: translateY(-2px);
+}
