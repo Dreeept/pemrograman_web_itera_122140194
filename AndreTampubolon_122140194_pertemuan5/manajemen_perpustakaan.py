@@ -70,6 +70,7 @@ if __name__ == "__main__":
     library = Library()
 
     while True:
+        # CLI menu
         print("\n=== Menu Perpustakaan ===")
         print("1. Tambah Buku")
         print("2. Tambah Majalah")
@@ -100,7 +101,7 @@ if __name__ == "__main__":
             keyword = input("Masukkan Judul atau ID: ")
             print("\n== Hasil Pencarian ==")
             library.find_item(keyword)
-            # Jika tidak ada item yang ditemukan, beri tahu pengguna
+            # Jika tidak ada item yang ditemukan, umumkan ke pengguna
             if not library.find_item(keyword):
                 print("Item tidak ditemukan.")
 
