@@ -32,7 +32,7 @@ Hasil Testing
 1. Clone repository ini:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Dreeept/pemrograman_web_itera_122140194.git
    cd pyramid_matakuliah
 
    ```
